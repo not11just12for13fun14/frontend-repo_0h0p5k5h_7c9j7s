@@ -3,19 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>flames.blue — Modern Payments & Digital Kits</title>
+  <title>About — flames.blue</title>
   <link rel="icon" href="assets/flames_blue_logo.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/tw-compat.css?v=f5b6f86">
   <link rel="stylesheet" href="/css/tailwind.css?v=f5b6f86">
   <link rel="stylesheet" href="/css/styles.css?v=f5b6f86">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.41/build/spline-viewer.js"></script>
 </head>
-<body class="min-h-screen flex flex-col bg-white text-gray-800">
-  <!-- Header -->
+<body class="min-h-screen flex flex-col">
   <header class="sticky top-0 z-40 header-blur border-b border-gray-200/60">
     <div class="container mx-auto flex items-center justify-between py-3">
       <button id="mobileMenuBtn" class="md:hidden btn-ghost" aria-label="Open menu">
@@ -46,45 +41,24 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero-gradient text-white">
-    <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 py-16 md:py-24">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Payments, tooling, and DIY kits for modern builders</h1>
-        <p class="mt-4 text-white/80 text-lg">flames.blue helps you design, launch, and scale with clean aesthetics and practical components.</p>
-        <div class="mt-6 flex gap-3">
-          <a href="/store.html" class="btn-primary">Explore Store</a>
-          <a href="/about.html" class="btn-secondary">Learn More</a>
+  <main class="container mx-auto py-12">
+    <div class="max-w-3xl">
+      <h1 class="text-3xl font-bold text-[color:var(--brand-navy)]">About flames.blue</h1>
+      <p class="mt-4 text-gray-600">We build clean, modern product experiences that are easy to customize and quick to ship. Our goal is to help indie builders, startups, and teams move faster with confident design defaults.</p>
+      <img src="/assets/flames_blue_header.webp" alt="Header" class="mt-8 rounded-xl ring-1 ring-gray-200 w-full"/>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="card p-6">
+          <h3 class="font-semibold text-lg text-[color:var(--brand-navy)]">Design language</h3>
+          <p class="mt-2 text-gray-600">Deep navy with flame accents and neutral grays for crisp contrast across components.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold text-lg text-[color:var(--brand-navy)]">Approach</h3>
+          <p class="mt-2 text-gray-600">Utility-first styling using Tailwind for predictable spacing and responsive behavior.</p>
         </div>
       </div>
-      <div class="relative h-[320px] md:h-[420px] rounded-xl overflow-hidden ring-1 ring-white/20 card-shadow">
-        <spline-viewer style="width: 100%; height: 100%;" url="https://prod.spline.design/41MGRk-UDPKO-l6W/scene.splinecode"></spline-viewer>
-      </div>
     </div>
-  </section>
+  </main>
 
-  <!-- Features -->
-  <section class="py-16">
-    <div class="container mx-auto grid md:grid-cols-3 gap-6">
-      <div class="card p-6">
-        <div class="badge">Fast setup</div>
-        <h3 class="mt-3 text-xl font-semibold text-[color:var(--brand-navy)]">Start in minutes</h3>
-        <p class="mt-2 text-gray-600">Prebuilt sections and consistent spacing so your pages look polished by default.</p>
-      </div>
-      <div class="card p-6">
-        <div class="badge">Clean design</div>
-        <h3 class="mt-3 text-xl font-semibold text-[color:var(--brand-navy)]">Glass morphic aesthetic</h3>
-        <p class="mt-2 text-gray-600">Modern gradients and subtle shadows keep content front-and-center.</p>
-      </div>
-      <div class="card p-6">
-        <div class="badge">Cart & Invoice</div>
-        <h3 class="mt-3 text-xl font-semibold text-[color:var(--brand-navy)]">Ready to sell</h3>
-        <p class="mt-2 text-gray-600">Add to cart, generate invoices, and share via WhatsApp or email in one click.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="mt-auto border-t border-gray-200">
     <div class="container mx-auto py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
@@ -100,7 +74,6 @@
     </div>
   </footer>
 
-  <!-- Cart Modal -->
   <div id="cartOverlay" class="modal-overlay">
     <div class="modal">
       <div class="modal-header flex items-center justify-between">
